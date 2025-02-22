@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "975156116622",
+    "project_id": "nagad-f6ebd",
+    "storage_bucket": "nagad-f6ebd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975156116622:android:010bce617879c8fcf01ddf",
+        "android_client_info": {
+          "package_name": "com.flutterflow.coffeeshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM_Y6WHG7NZ96OXhiZ21RQ8IAmPg8Uzqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975156116622:android:eadd65c8d29caeb6f01ddf",
+        "android_client_info": {
+          "package_name": "io.builderking.hiva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM_Y6WHG7NZ96OXhiZ21RQ8IAmPg8Uzqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975156116622:android:4ff0ebf6142d18b5f01ddf",
+        "android_client_info": {
+          "package_name": "io.flutterflow.diningapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM_Y6WHG7NZ96OXhiZ21RQ8IAmPg8Uzqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
