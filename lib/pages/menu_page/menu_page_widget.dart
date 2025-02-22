@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'menu_page_model.dart';
-import '../../models/product.dart';
+import 'package:nguat/models/product_model.dart';
 import '../../models/cart_item.dart';
 import '../../models/order_item.dart';
 
@@ -172,11 +172,12 @@ class MenuPageWidget extends StatelessWidget {
   }
 
   void _showCartDialog(BuildContext context, MenuPageModel model) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Shopping Cart'),
-        content: SizedBox(
+  showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text('Shopping Cart'),
+      content: Consumer<MenuPageModel>(
+        builder: (context, model, child) => SizedBox(
           width: double.maxFinite,
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -199,14 +200,12 @@ class MenuPageWidget extends StatelessWidget {
                           children: [
                             IconButton(
                               icon: const Icon(Icons.remove),
-                              onPressed: () =>
-                                  model.decrementQuantity(item.product),
+                              onPressed: () => model.decrementQuantity(item.product),
                             ),
                             Text('${item.quantity}'),
                             IconButton(
                               icon: const Icon(Icons.add),
-                              onPressed: () =>
-                                  model.incrementQuantity(item.product),
+                              onPressed: () => model.incrementQuantity(item.product),
                             ),
                           ],
                         ),
@@ -235,54 +234,50 @@ class MenuPageWidget extends StatelessWidget {
             ],
           ),
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
-          ),
-          if (!model.isCartEmpty)
-            ElevatedButton(
-              onPressed: model.isSubmitting
-                  ? null
-                  : () async {
-                      try {
-                        // Submit order first
-                        await model.submitOrder(context);
-                        if (!context.mounted) return;
-                        Navigator.pop(context); // Close cart dialog
-
-                        if (model.successMessage != null) {
-                          // Clear cart after successful submission
-                          model.clearCart();
-
-                          if (!context.mounted) return;
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(model.successMessage!),
-                              backgroundColor: Colors.green,
-                            ),
-                          );
-                        }
-                      } catch (e) {
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Close'),
+        ),
+        if (!model.isCartEmpty)
+          ElevatedButton(
+            onPressed: model.isSubmitting
+                ? null
+                : () async {
+                    try {
+                      await model.submitOrder(context);
+                      if (!context.mounted) return;
+                      Navigator.pop(context);
+                      if (model.successMessage != null) {
+                        model.clearCart();
                         if (!context.mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content:
-                                Text(model.error ?? 'Failed to submit order'),
-                            backgroundColor: Colors.red,
+                            content: Text(model.successMessage!),
+                            backgroundColor: Colors.green,
                           ),
                         );
                       }
-                    },
-              child: model.isSubmitting
-                  ? const SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                      ),
-                    )
+                    } catch (e) {
+                      if (!context.mounted) return;
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(model.error ?? 'Failed to submit order'),
+                          backgroundColor: Colors.red,
+                        ),
+                      );
+                    }
+                  },
+            child: model.isSubmitting
+                ? const SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                    ),
+                  )
                   : const Text('Submit Order'),
             ),
         ],

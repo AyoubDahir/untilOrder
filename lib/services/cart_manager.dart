@@ -28,7 +28,7 @@ class CartItem {
 class CartManager with ChangeNotifier {
   static const String _cartKey = 'cart_items';
   static const String _orderHistoryKey = 'order_history';
-  final Map<int, CartItem> _items = {};
+  final Map<String, CartItem> _items = {};
   final List<Map<String, dynamic>> _orderHistory = [];
   final OrderService _orderService = OrderService();
   
@@ -38,38 +38,40 @@ class CartManager with ChangeNotifier {
   }
 
   // Getters
-  List<CartItem> get items => _items.values.toList();
+  Map<String, CartItem> get items => Map.unmodifiable(_items);
   int get itemCount => _items.values.fold(0, (sum, item) => sum + item.quantity);
   double get subtotal => _items.values.fold(0.0, (sum, item) => sum + item.total);
   double get tax => subtotal * 0.05; // 5% tax
   double get total => subtotal + tax;
   List<Map<String, dynamic>> get orderHistory => _orderHistory;
+  bool get isEmpty => _items.isEmpty;
 
   // Cart Operations
-  void addItem(Product product) {
+  void addItem(Product product, {int quantity = 1}) {
     if (_items.containsKey(product.id)) {
-      _items[product.id]!.quantity++;
+      _items[product.id]!.quantity += quantity;
     } else {
-      _items[product.id] = CartItem(product: product);
+      _items[product.id] = CartItem(product: product, quantity: quantity);
     }
     _saveCart();
     notifyListeners();
   }
 
-  void removeItem(int productId) {
-    if (_items.containsKey(productId)) {
-      if (_items[productId]!.quantity > 1) {
-        _items[productId]!.quantity--;
+  void removeItem(Product product, {int quantity = 1}) {
+    if (_items.containsKey(product.id)) {
+      final currentQuantity = _items[product.id]!.quantity;
+      if (currentQuantity <= quantity) {
+        _items.remove(product.id);
       } else {
-        _items.remove(productId);
+        _items[product.id]!.quantity = currentQuantity - quantity;
       }
       _saveCart();
       notifyListeners();
     }
   }
 
-  void removeItemCompletely(int productId) {
-    _items.remove(productId);
+  void removeItemCompletely(Product product) {
+    _items.remove(product.id);
     _saveCart();
     notifyListeners();
   }
@@ -78,6 +80,33 @@ class CartManager with ChangeNotifier {
     _items.clear();
     _saveCart();
     notifyListeners();
+  }
+
+  void clear() {
+    clearCart();
+    notifyListeners();
+  }
+
+  void incrementQuantity(Product product) {
+    if (_items.containsKey(product.id)) {
+      _items[product.id]!.quantity += 1;
+    } else {
+      _items[product.id] = CartItem(product: product, quantity: 1);
+    }
+    _saveCart();
+    notifyListeners();
+  }
+
+  void decrementQuantity(Product product) {
+    if (_items.containsKey(product.id)) {
+      if (_items[product.id]!.quantity > 1) {
+        _items[product.id]!.quantity -= 1;
+      } else {
+        _items.remove(product.id);
+      }
+      _saveCart();
+      notifyListeners();
+    }
   }
 
   // Order History
@@ -101,21 +130,13 @@ class CartManager with ChangeNotifier {
 
       final orderLines = _items.entries.map((entry) {
         final item = entry.value;
-        final productId = int.tryParse(item.product.id.toString());
-        if (productId == null) {
-          throw Exception('Invalid product ID: ${item.product.id}');
-        }
-        return [0, 0, {
-          'product_id': productId,
+        return {
+          'product_id': item.product.id,
           'qty': item.quantity,
           'price_unit': item.product.price,
-          'discount': 0,
-          'tax_ids': [[6, false, []]],
-          'price_subtotal': item.product.price * item.quantity,
-          'price_subtotal_incl': item.product.price * item.quantity,
-          'notice': '',
-          'full_product_name': item.product.name,
-        }];
+          'price_subtotal': item.total,
+          'full_product_name': item.product.name
+        };
       }).toList();
 
       final totalAmount = total;
@@ -139,7 +160,7 @@ class CartManager with ChangeNotifier {
       );
 
       if (result['status'] == 'success') {
-        await clearCart();
+        clear();
       }
 
       return result;

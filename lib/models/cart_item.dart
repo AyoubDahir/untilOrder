@@ -1,4 +1,4 @@
-import 'package:nguat/models/product.dart';
+import 'package:nguat/models/product_model.dart';
 
 class CartItem {
   final Product product;
@@ -6,7 +6,7 @@ class CartItem {
 
   CartItem({
     required this.product,
-    required this.quantity,
+    this.quantity = 1,
   }) {
     // Validate product ID
     if (product.id.isEmpty) {
@@ -19,16 +19,15 @@ class CartItem {
 
   double get total => product.price * quantity;
 
-  Map<String, dynamic> toJson() => {
-    'product_id': int.parse(product.id),
-    'name': product.name,
-    'price': product.price,
-    'quantity': quantity,
-    'total': total,
-  };
+  factory CartItem.fromJson(Map<String, dynamic> json) {
+    return CartItem(
+      product: Product.fromJson(json['product']),
+      quantity: json['quantity'],
+    );
+  }
 
-  factory CartItem.fromJson(Map<String, dynamic> json) => CartItem(
-    product: Product.fromJson(json['product']),
-    quantity: json['quantity'],
-  );
+  Map<String, dynamic> toJson() => {
+    'product': product.toJson(),
+    'quantity': quantity,
+  };
 }

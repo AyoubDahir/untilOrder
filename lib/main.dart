@@ -8,7 +8,8 @@ import 'pages/login_page/login_page_model.dart';
 import 'dashboard/dashboard_model.dart';
 import 'services/navigation_service.dart';
 import 'pages/dashboard/dashboard_page.dart';
-import 'package:printing/printing.dart'; // Add this import
+import 'package:printing/printing.dart';
+import 'package:nguat/services/cart_manager.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (_) => MenuPageModel(),
+          create: (_) => MenuPageModel(cartManager: CartManager()),
         ),
         ChangeNotifierProxyProvider<MenuPageModel, LoginPageModel>(
           create: (context) => LoginPageModel(menuPageModel: context.read<MenuPageModel>()),

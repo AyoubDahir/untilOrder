@@ -1,0 +1,406 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+MERGED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+MERGED from [:path_provider_android] C:\Users\Busho Moniter one\Documents\nguat\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
+MERGED from [:shared_preferences_android] C:\Users\Busho Moniter one\Documents\nguat\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\02d75034a057906a559bd475a099468d\transformed\jetified-datastore-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\39b5be7644211567c59ad416cbe92c22\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34bbe46d1c851404e50877f7e535e7d4\transformed\jetified-datastore-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.preference:preference:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\466e29ab3a9c0d60087da7be5dbc8d8a\transformed\preference-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\5cc00abbcfc4b8332c06ff46d26c3b49\transformed\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.7.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\058c059c82a490f4fe0b0c81e295f01b\transformed\jetified-fragment-ktx-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0c22c4629667de980607408aa579be9e\transformed\fragment-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\997ae0af4b208af60cd7e62efa02d449\transformed\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\be768e6726e39d8bc8ff4f2d77ce665c\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6c06dcb256b964acfc54f4b6f494c77c\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.window:window-java:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ea4e0881c6155e26a55efb7e564a0fd7\transformed\jetified-window-java-1.2.0\AndroidManifest.xml:17:1-21:12
+MERGED from [androidx.activity:activity-ktx:1.8.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d720dd36de209fe16f6dd25a7ad6bce0\transformed\jetified-activity-ktx-1.8.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\a288bcaeb6fd4cf9c0df54ab22f68d84\transformed\jetified-activity-1.8.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\00ff8230ff2cf77f7fbc535beba5bf88\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\94ba834f67c74fb2c9a7a2c8b246832d\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\133a1c8a1304d2f0bb6422b4e6dc10e7\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\aa2a3b1dfc91e9665a2fcaf75179f80e\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\64dfde27be04b359d1001b9a62fac1eb\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\48f0b54414acc84ab668080c63727944\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b5cf0ee5309a5e14c1b36059752d4743\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b1f88cdee1768e26e8369f49e63fdc8e\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d0b8b9a210d4e8fec715d4205f978515\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0bfddf2e3750b3ebcac5b61b776036b9\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\8cf3c186c23eb2fcbac43c464d8839c2\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e9153fd5b569a83c5cddae7bbc58cb39\transformed\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0ab0a91a2a9b9dfe1f140c2a8654bfcf\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\374f7b8838d16b0a5277837c5070eb85\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\91a65fa9397b61a17b114354f666a0f4\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7c844dddd9598c0180fa963213f9a30e\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\821e6d3461e25a6633b975abc1fe1c4e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\f55bcbe9e20578a913333cc8913be8e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\c10431e21d9af47ad1573236dc3c023e\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1a93223dd63f413dfcb9e6e7700bf247\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1f027b53c5603563788c44f5cadbd495\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7a292dd48c13cadd308294e797eb7511\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d54a57eb99bc0574203a664494934b40\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6b50e21f807077568f38f3904a1fcf22\transformed\jetified-tracing-1.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\4f358514669824c09243b564219eba6d\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6f8ff9da98014aa1e1ba744170b1ae09\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\9988a5c71b33e3533cfb2b2bfc92bb5f\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\f14bd636d42f12fc57764bf9949cbd6b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ec0613c62a305b16f3bfa0e3192443c8\transformed\jetified-core-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ac276f9269466859f4b424cdd48b1dca\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b0ebb69875579f82414d7fded791a6dc\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\acf14c34e58c21257b73141e021b27c5\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\a2438cbe3329ab4dcaa009b230d70648\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\4b30c1fa51eb62b805b6cf416d7d47af\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:1-54:12
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:6:5-106
+	android:maxSdkVersion
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:6:78-104
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:7:5-107
+	android:maxSdkVersion
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:7:79-105
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:7:22-78
+application
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:8:5-53:19
+MERGED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-19:19
+MERGED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-19:19
+MERGED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6f8ff9da98014aa1e1ba744170b1ae09\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6f8ff9da98014aa1e1ba744170b1ae09\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:12:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:9:9-31
+	android:icon
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:11:9-43
+	android:enableOnBackInvokedCallback
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:14:9-51
+	tools:replace
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:10:9-38
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:13:9-44
+activity#io.flutterflow.diningapp.MainActivity
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:16:9-46:20
+	android:launchMode
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:19:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:22:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:23:13-55
+	android:exported
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:18:13-36
+	android:configChanges
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:21:13-163
+	android:theme
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:20:13-47
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:17:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:28:13-31:17
+	android:resource
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:30:15-52
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:29:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:37:13-40:17
+	android:resource
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:39:15-61
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:38:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:41:13-44:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:42:17-68
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:43:17-76
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:43:27-74
+meta-data#flutterEmbedding
+ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:50:9-52:33
+	android:value
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:52:13-30
+	android:name
+		ADDED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml:51:13-44
+uses-sdk
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+MERGED from [:path_provider_android] C:\Users\Busho Moniter one\Documents\nguat\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\Busho Moniter one\Documents\nguat\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\Busho Moniter one\Documents\nguat\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\Busho Moniter one\Documents\nguat\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\02d75034a057906a559bd475a099468d\transformed\jetified-datastore-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\02d75034a057906a559bd475a099468d\transformed\jetified-datastore-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\39b5be7644211567c59ad416cbe92c22\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\39b5be7644211567c59ad416cbe92c22\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34bbe46d1c851404e50877f7e535e7d4\transformed\jetified-datastore-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34bbe46d1c851404e50877f7e535e7d4\transformed\jetified-datastore-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\466e29ab3a9c0d60087da7be5dbc8d8a\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\466e29ab3a9c0d60087da7be5dbc8d8a\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\5cc00abbcfc4b8332c06ff46d26c3b49\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\5cc00abbcfc4b8332c06ff46d26c3b49\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.7.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\058c059c82a490f4fe0b0c81e295f01b\transformed\jetified-fragment-ktx-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.7.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\058c059c82a490f4fe0b0c81e295f01b\transformed\jetified-fragment-ktx-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0c22c4629667de980607408aa579be9e\transformed\fragment-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0c22c4629667de980607408aa579be9e\transformed\fragment-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\997ae0af4b208af60cd7e62efa02d449\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\997ae0af4b208af60cd7e62efa02d449\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\be768e6726e39d8bc8ff4f2d77ce665c\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\be768e6726e39d8bc8ff4f2d77ce665c\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6c06dcb256b964acfc54f4b6f494c77c\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6c06dcb256b964acfc54f4b6f494c77c\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window-java:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ea4e0881c6155e26a55efb7e564a0fd7\transformed\jetified-window-java-1.2.0\AndroidManifest.xml:19:5-44
+MERGED from [androidx.window:window-java:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ea4e0881c6155e26a55efb7e564a0fd7\transformed\jetified-window-java-1.2.0\AndroidManifest.xml:19:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d720dd36de209fe16f6dd25a7ad6bce0\transformed\jetified-activity-ktx-1.8.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d720dd36de209fe16f6dd25a7ad6bce0\transformed\jetified-activity-ktx-1.8.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\a288bcaeb6fd4cf9c0df54ab22f68d84\transformed\jetified-activity-1.8.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\a288bcaeb6fd4cf9c0df54ab22f68d84\transformed\jetified-activity-1.8.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\00ff8230ff2cf77f7fbc535beba5bf88\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\00ff8230ff2cf77f7fbc535beba5bf88\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\94ba834f67c74fb2c9a7a2c8b246832d\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\94ba834f67c74fb2c9a7a2c8b246832d\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\133a1c8a1304d2f0bb6422b4e6dc10e7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\133a1c8a1304d2f0bb6422b4e6dc10e7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\aa2a3b1dfc91e9665a2fcaf75179f80e\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\aa2a3b1dfc91e9665a2fcaf75179f80e\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\64dfde27be04b359d1001b9a62fac1eb\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\64dfde27be04b359d1001b9a62fac1eb\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\48f0b54414acc84ab668080c63727944\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\48f0b54414acc84ab668080c63727944\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b5cf0ee5309a5e14c1b36059752d4743\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b5cf0ee5309a5e14c1b36059752d4743\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b1f88cdee1768e26e8369f49e63fdc8e\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b1f88cdee1768e26e8369f49e63fdc8e\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d0b8b9a210d4e8fec715d4205f978515\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d0b8b9a210d4e8fec715d4205f978515\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0bfddf2e3750b3ebcac5b61b776036b9\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0bfddf2e3750b3ebcac5b61b776036b9\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\8cf3c186c23eb2fcbac43c464d8839c2\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\8cf3c186c23eb2fcbac43c464d8839c2\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e9153fd5b569a83c5cddae7bbc58cb39\transformed\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e9153fd5b569a83c5cddae7bbc58cb39\transformed\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0ab0a91a2a9b9dfe1f140c2a8654bfcf\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\0ab0a91a2a9b9dfe1f140c2a8654bfcf\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\374f7b8838d16b0a5277837c5070eb85\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\374f7b8838d16b0a5277837c5070eb85\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\91a65fa9397b61a17b114354f666a0f4\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\91a65fa9397b61a17b114354f666a0f4\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7c844dddd9598c0180fa963213f9a30e\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7c844dddd9598c0180fa963213f9a30e\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\821e6d3461e25a6633b975abc1fe1c4e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\821e6d3461e25a6633b975abc1fe1c4e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\f55bcbe9e20578a913333cc8913be8e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\f55bcbe9e20578a913333cc8913be8e8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\c10431e21d9af47ad1573236dc3c023e\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\c10431e21d9af47ad1573236dc3c023e\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1a93223dd63f413dfcb9e6e7700bf247\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1a93223dd63f413dfcb9e6e7700bf247\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1f027b53c5603563788c44f5cadbd495\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1f027b53c5603563788c44f5cadbd495\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7a292dd48c13cadd308294e797eb7511\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7a292dd48c13cadd308294e797eb7511\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d54a57eb99bc0574203a664494934b40\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\d54a57eb99bc0574203a664494934b40\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6b50e21f807077568f38f3904a1fcf22\transformed\jetified-tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6b50e21f807077568f38f3904a1fcf22\transformed\jetified-tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\4f358514669824c09243b564219eba6d\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\4f358514669824c09243b564219eba6d\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6f8ff9da98014aa1e1ba744170b1ae09\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\6f8ff9da98014aa1e1ba744170b1ae09\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\9988a5c71b33e3533cfb2b2bfc92bb5f\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\9988a5c71b33e3533cfb2b2bfc92bb5f\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\f14bd636d42f12fc57764bf9949cbd6b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\f14bd636d42f12fc57764bf9949cbd6b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ec0613c62a305b16f3bfa0e3192443c8\transformed\jetified-core-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ec0613c62a305b16f3bfa0e3192443c8\transformed\jetified-core-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ac276f9269466859f4b424cdd48b1dca\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\ac276f9269466859f4b424cdd48b1dca\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b0ebb69875579f82414d7fded791a6dc\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\b0ebb69875579f82414d7fded791a6dc\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\acf14c34e58c21257b73141e021b27c5\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\acf14c34e58c21257b73141e021b27c5\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\a2438cbe3329ab4dcaa009b230d70648\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\a2438cbe3329ab4dcaa009b230d70648\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\4b30c1fa51eb62b805b6cf416d7d47af\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\4b30c1fa51eb62b805b6cf416d7d47af\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Busho Moniter one\Documents\nguat\android\app\src\debug\AndroidManifest.xml
+provider#net.nfet.flutter.printing.PrintFileProvider
+ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-68
+	android:exported
+		ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:71
+	android:resource
+		ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from [:printing] C:\Users\Busho Moniter one\Documents\nguat\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\7da2e98b29151f5ef4f0f33378d5f82c\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+permission#io.flutterflow.diningapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+uses-permission#io.flutterflow.diningapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\34d749803c85e228a50a26e83c446f9c\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\54501bf89d38fc41bf066fba3eecc52e\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\1e5c8f659fc2581ee96769bf4d1267b8\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Busho Moniter one\.gradle\caches\transforms-3\e57e12181c3bf917d71112b20c4c6bf3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92

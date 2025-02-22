@@ -4,12 +4,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'package:pdf/pdf.dart';
 import '../../services/order_service.dart';
-import '../../models/product.dart';
-import '../../models/cart_item.dart';
+import 'package:nguat/models/product_model.dart' as product_model;
 import '../../services/navigation_service.dart';
 import '../../widgets/receipt_widget.dart';
 import '../../models/order_item.dart';
 import 'package:printing/printing.dart';
+import '../../services/cart_manager.dart';
 
 class MenuPageModel extends ChangeNotifier {
   String? _sessionToken;
@@ -18,11 +18,11 @@ class MenuPageModel extends ChangeNotifier {
   int? _userId;
   bool _isLoading = false;
   String? _error;
-  List<Product> _products = [];
-  List<Product> _filteredProducts = [];
+  List<product_model.Product> _products = [];
+  List<product_model.Product> _filteredProducts = [];
   String? _selectedCategory;
   Set<String> _categories = {};
-  final Map<String, CartItem> _cart = {};
+  final CartManager _cartManager;
   bool _isSubmitting = false;
   String? _successMessage;
   String? _lastOrderId;
@@ -39,28 +39,19 @@ class MenuPageModel extends ChangeNotifier {
   static final GlobalKey<NavigatorState> navigatorKey =
       GlobalKey<NavigatorState>();
 
-  MenuPageModel({
-    String? sessionToken,
-    String? employeeId,
-    String? userId,
-  }) {
-    _sessionToken = sessionToken;
-    _employeeId = employeeId;
-    _userId = int.tryParse(userId ?? '');
-    _initPrefs();
-  }
+  MenuPageModel({required CartManager cartManager}) : _cartManager = cartManager;
 
   Future<void> _initPrefs() async {
     _prefs = await SharedPreferences.getInstance();
     await _loadCachedProducts();
   }
 
-  Future<List<Product>> _loadCachedProducts() async {
+  Future<List<product_model.Product>> _loadCachedProducts() async {
     try {
       final cachedData = _prefs?.getString(PRODUCTS_CACHE_KEY);
       if (cachedData != null) {
         final List<dynamic> productsJson = json.decode(cachedData);
-        return productsJson.map((json) => Product.fromJson(json)).toList();
+        return productsJson.map((json) => product_model.Product.fromJson(json)).toList();
       }
     } catch (e) {
       debugPrint('Error loading cached products: $e');
@@ -83,26 +74,19 @@ class MenuPageModel extends ChangeNotifier {
   // Getters
   bool get isLoading => _isLoading;
   String? get error => _error;
-  List<Product> get products => _products;
-  List<Product> get filteredProducts => _filteredProducts;
+  List<product_model.Product> get products => _products;
+  List<product_model.Product> get filteredProducts => _filteredProducts;
   String? get selectedCategory => _selectedCategory;
   Set<String> get categories => _categories;
-  List<CartItem> get cartItems => _cart.values.toList();
-  bool get isCartEmpty => _cart.isEmpty;
-  int get cartItemCount => _cart.values.fold(0, (sum, item) => sum + item.quantity);
   bool get isSubmitting => _isSubmitting;
   String? get employeeName => _employeeName;
-
-  double get subtotal {
-    return _cart.values.fold(
-        0.0, (sum, item) => sum + (item.product.price * item.quantity));
-  }
-
-  double get tax => subtotal * TAX_RATE;
-  double get total => subtotal + tax;
+  int get cartItemCount => _cartManager.itemCount;
+  List<CartItem> get cartItems => _cartManager.items.values.toList();
+  bool get isCartEmpty => _cartManager.items.isEmpty;
+  double get subtotal => _cartManager.subtotal;
+  double get tax => _cartManager.tax;
+  double get total => _cartManager.total;
   String? get successMessage => _successMessage;
-  String? get lastOrderId => _lastOrderId;
-  double get cartTotal => subtotal + tax;
 
   // Setters
   set sessionToken(String? value) {
@@ -185,60 +169,6 @@ class MenuPageModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void addToCart(Product product) {
-    if (_cart.containsKey(product.id)) {
-      _cart[product.id]!.quantity++;
-    } else {
-      _cart[product.id] = CartItem(product: product, quantity: 1);
-    }
-    notifyListeners();
-  }
-
-  void removeFromCart(Product product) {
-    if (_cart.containsKey(product.id)) {
-      if (_cart[product.id]!.quantity > 1) {
-        _cart[product.id]!.quantity--;
-      } else {
-        _cart.remove(product.id);
-      }
-      notifyListeners();
-    }
-  }
-
-  void updateQuantity(String productId, int quantity) {
-    if (quantity <= 0) {
-      _cart.remove(productId);
-    } else {
-      _cart[productId]?.quantity = quantity;
-    }
-    notifyListeners();
-  }
-
-  void clearCart() {
-    _cart.clear();
-    notifyListeners();
-  }
-
-  void incrementQuantity(Product product) {
-    addToCart(product);
-  }
-
-  void decrementQuantity(Product product) {
-    if (_cart.containsKey(product.id)) {
-      if (_cart[product.id]!.quantity > 1) {
-        _cart[product.id]!.quantity--;
-      } else {
-        _cart.remove(product.id);
-      }
-      notifyListeners();
-    }
-  }
-
-  void removeItemCompletely(Product product) {
-    _cart.remove(product.id);
-    notifyListeners();
-  }
-
   Future<void> refreshProducts() async {
     _isLoading = true;
     notifyListeners();
@@ -248,7 +178,7 @@ class MenuPageModel extends ChangeNotifier {
       await Future.delayed(const Duration(seconds: 1));
       _products.clear();
       _products.addAll([
-        Product(
+        product_model.Product(
           id: '1',
           name: 'Espresso',
           description: 'Strong black coffee',
@@ -257,7 +187,7 @@ class MenuPageModel extends ChangeNotifier {
           type: 'Coffee',
           category: 'Coffee',
         ),
-        Product(
+        product_model.Product(
           id: '2',
           name: 'Cappuccino',
           description: 'Coffee with steamed milk foam',
@@ -266,7 +196,7 @@ class MenuPageModel extends ChangeNotifier {
           type: 'Coffee',
           category: 'Coffee',
         ),
-        Product(
+        product_model.Product(
           id: '3',
           name: 'Green Tea',
           description: 'Traditional green tea',
@@ -275,7 +205,7 @@ class MenuPageModel extends ChangeNotifier {
           type: 'Tea',
           category: 'Tea',
         ),
-        Product(
+        product_model.Product(
           id: '4',
           name: 'Croissant',
           description: 'Buttery, flaky pastry',
@@ -284,7 +214,7 @@ class MenuPageModel extends ChangeNotifier {
           type: 'Pastry',
           category: 'Pastry',
         ),
-        Product(
+        product_model.Product(
           id: '5',
           name: 'Chocolate Muffin',
           description: 'Rich chocolate muffin',
@@ -293,7 +223,7 @@ class MenuPageModel extends ChangeNotifier {
           type: 'Pastry',
           category: 'Pastry',
         ),
-        Product(
+        product_model.Product(
           id: '6',
           name: 'Iced Latte',
           description: 'Cold coffee with milk',
@@ -349,7 +279,7 @@ class MenuPageModel extends ChangeNotifier {
   }
 
   Future<void> submitOrder(BuildContext context) async {
-    if (_cart.isEmpty) {
+    if (_cartManager.isEmpty) {
       _error = 'Cart is empty';
       notifyListeners();
       return;
@@ -361,7 +291,7 @@ class MenuPageModel extends ChangeNotifier {
       notifyListeners();
 
       debugPrint('Cart items before submission:');
-      for (var item in _cart.values) {
+      for (var item in _cartManager.items.values) {
         debugPrint('${item.product.name}: ${item.quantity}x \$${item.product.price}');
       }
 
@@ -375,7 +305,7 @@ class MenuPageModel extends ChangeNotifier {
       orderService.sessionToken = _sessionToken;
 
       // Convert cart items to receipt items with proper typing
-      final receiptItems = _cart.values.map((item) => {
+      final receiptItems = _cartManager.items.values.map((item) => {
         'name': item.product.name,
         'quantity': item.quantity,
         'price': item.product.price,
@@ -574,8 +504,7 @@ class MenuPageModel extends ChangeNotifier {
             );
             debugPrint('Receipt dialog shown');
           }
-          
-          clearCart(); // Clear the cart after successful submission
+          _cartManager.clear(); // Clear the cart
           notifyListeners();
         } else {
           _error = 'Failed to submit order';
@@ -611,6 +540,31 @@ class MenuPageModel extends ChangeNotifier {
       _isSubmitting = false;
       notifyListeners();
     }
+  }
+
+  void addToCart(product_model.Product product) {
+    _cartManager.addItem(product);
+    notifyListeners();
+  }
+
+  void removeFromCart(product_model.Product product) {
+    _cartManager.removeItem(product);
+    notifyListeners();
+  }
+
+  void incrementQuantity(product_model.Product product) {
+    _cartManager.addItem(product);
+    notifyListeners();
+  }
+
+  void decrementQuantity(product_model.Product product) {
+    _cartManager.removeItem(product);
+    notifyListeners();
+  }
+
+  void clearCart() {
+    _cartManager.clearCart();
+    notifyListeners();
   }
 
   Future<void> checkLoginState() async {
@@ -659,7 +613,7 @@ class MenuPageModel extends ChangeNotifier {
         
         if (data['status'] == 'success' && data['products'] is List) {
           _products = (data['products'] as List)
-              .map((json) => Product.fromJson(json))
+              .map((json) => product_model.Product.fromJson(json))
               .toList();
           
           // Sort products by name
@@ -699,7 +653,7 @@ class MenuPageModel extends ChangeNotifier {
   Future<void> logout(BuildContext context) async {
     try {
       // Clear cart
-      clearCart();
+      _cartManager.clear();
 
       // Clear session data
       _sessionToken = null;
