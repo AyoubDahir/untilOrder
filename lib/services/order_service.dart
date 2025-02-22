@@ -643,6 +643,7 @@ class OrderService {
           "qty": quantity,
           "tax_ids": [[6, false, []]],
           "name": item['name'] ?? '',
+          "full_product_name": item['name'] ?? '',
         }];
       }).toList();
 
