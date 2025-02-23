@@ -44,7 +44,7 @@ class ReceiptWidget {
                     total: total,
                     isKitchenCopy: false,
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   // Cutting Line
                   Container(
                     padding: const EdgeInsets.symmetric(vertical: 10),
@@ -62,7 +62,7 @@ class ReceiptWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   // Kitchen Copy
                   _buildReceiptContent(
                     context: context,
@@ -74,7 +74,7 @@ class ReceiptWidget {
                     total: total,
                     isKitchenCopy: true,
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 10),
                   // Action Buttons
                   Container(
                     padding: const EdgeInsets.all(16),
@@ -215,7 +215,7 @@ class ReceiptWidget {
           'Served by $cashierName',
           style: const TextStyle(fontSize: 14),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 18),
         // Order Items Table
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -328,7 +328,7 @@ class ReceiptWidget {
             ],
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 10),
         if (!isKitchenCopy)
           const Text(
             'Thank you for dining with us!',
