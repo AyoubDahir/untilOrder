@@ -4,6 +4,8 @@ import 'menu_page_model.dart';
 import 'package:nguat/models/product_model.dart';
 import '../../models/cart_item.dart';
 import '../../models/order_item.dart';
+import 'package:nguat/widgets/receipt_widget.dart';
+
 
 class MenuPageWidget extends StatelessWidget {
   const MenuPageWidget({Key? key}) : super(key: key);
@@ -245,20 +247,28 @@ class MenuPageWidget extends StatelessWidget {
             onPressed: model.isSubmitting
                 ? null
                 : () async {
-                    try {
+                    try 
+                    {
                       await model.submitOrder(context);
-                      if (!context.mounted) return;
-                      Navigator.pop(context);
-                      if (model.successMessage != null) {
-                        model.clearCart();
-                        if (!context.mounted) return;
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(model.successMessage!),
-                            backgroundColor: Colors.green,
-                          ),
+                       
+                         await ReceiptWidget.showReceiptDialog(
+                          context: context,
+                          orderReference: model.lastOrderId ?? 'N/A',
+                          orderItems: model.cartItems.map((item) => {
+                            'name': item.product.name,
+                            'quantity': item.quantity,
+                            'price': item.product.price,
+                          }).toList(),
+                          cashierName: model.employeeName ?? 'Unknown',
+                          subtotal: model.subtotal,
+                          tax: model.tax,
+                          total: model.total,
                         );
-                      }
+                       model.clearCart();
+
+
+
+                     
                     } catch (e) {
                       if (!context.mounted) return;
                       ScaffoldMessenger.of(context).showSnackBar(

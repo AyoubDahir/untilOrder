@@ -38,12 +38,18 @@ class MenuPageModel extends ChangeNotifier {
   static const double TAX_RATE = 0.05; // 5% tax rate
   static final GlobalKey<NavigatorState> navigatorKey =
       GlobalKey<NavigatorState>();
+      String? lastOrderId;
 
   MenuPageModel({required CartManager cartManager}) : _cartManager = cartManager;
 
   Future<void> _initPrefs() async {
     _prefs = await SharedPreferences.getInstance();
     await _loadCachedProducts();
+  }
+
+  void setLastOrderId(String orderId) {
+    lastOrderId = orderId;
+    notifyListeners();
   }
 
   Future<List<product_model.Product>> _loadCachedProducts() async {
