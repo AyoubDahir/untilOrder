@@ -176,122 +176,139 @@ class MenuPageWidget extends StatelessWidget {
   void _showCartDialog(BuildContext context, MenuPageModel model) {
   showDialog(
     context: context,
-    builder: (context) => AlertDialog(
-      title: const Text('Shopping Cart'),
-      content: Consumer<MenuPageModel>(
-        builder: (context, model, child) => SizedBox(
-          width: double.maxFinite,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              if (model.isCartEmpty)
-                const Text('Your cart is empty')
-              else
-                Flexible(
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: model.cartItems.length,
-                    itemBuilder: (context, index) {
-                      final item = model.cartItems[index];
-                      return ListTile(
-                        title: Text(item.product.name),
-                        subtitle: Text(
-                            '\$${item.product.price.toStringAsFixed(2)} x ${item.quantity}'),
-                        trailing: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            IconButton(
-                              icon: const Icon(Icons.remove),
-                              onPressed: () => model.decrementQuantity(item.product),
-                            ),
-                            Text('${item.quantity}'),
-                            IconButton(
-                              icon: const Icon(Icons.add),
-                              onPressed: () => model.incrementQuantity(item.product),
-                            ),
-                          ],
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              if (!model.isCartEmpty) ...[
-                const Divider(),
-                Text(
-                  'Subtotal: \$${model.subtotal.toStringAsFixed(2)}',
-                  style: const TextStyle(fontSize: 16),
-                ),
-                Text(
-                  'Tax: \$${model.tax.toStringAsFixed(2)}',
-                  style: const TextStyle(fontSize: 16),
-                ),
-                Text(
-                  'Total: \$${model.total.toStringAsFixed(2)}',
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                  ),
-                ),
-              ],
-            ],
-          ),
-        ),
+    builder: (context) => Dialog(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
       ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: const Text('Close'),
-        ),
-        if (!model.isCartEmpty)
-          ElevatedButton(
-            onPressed: model.isSubmitting
-                ? null
-                : () async {
-                    try 
-                    {
-                      await model.submitOrder(context);
-                       
-                         await ReceiptWidget.showReceiptDialog(
-                          context: context,
-                          orderReference: model.lastOrderId ?? 'N/A',
-                          orderItems: model.cartItems.map((item) => {
-                            'name': item.product.name,
-                            'quantity': item.quantity,
-                            'price': item.product.price,
-                          }).toList(),
-                          cashierName: model.employeeName ?? 'Unknown',
-                          subtotal: model.subtotal,
-                          tax: model.tax,
-                          total: model.total,
-                        );
-                       model.clearCart();
-
-
-
-                     
-                    } catch (e) {
-                      if (!context.mounted) return;
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(model.error ?? 'Failed to submit order'),
-                          backgroundColor: Colors.red,
-                        ),
-                      );
-                    }
-                  },
-            child: model.isSubmitting
-                ? const SizedBox(
-                    width: 20,
-                    height: 20,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                    ),
-                  )
-                  : const Text('Submit Order'),
+      elevation: 4,
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text(
+              'Shopping Cart',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-        ],
+            const SizedBox(height: 16),
+            Consumer<MenuPageModel>(
+              builder: (context, model, child) => SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (model.isCartEmpty)
+                      const Text('Your cart is empty')
+                    else
+                      Column(
+                        children: model.cartItems.map((item) => ListTile(
+                          contentPadding: EdgeInsets.zero,
+                          title: Text(
+                            item.product.name,
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Text(
+                            '\$${item.product.price.toStringAsFixed(2)} x ${item.quantity}',
+                            style: const TextStyle(color: Colors.grey),
+                          ),
+                          trailing: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              IconButton(
+                                icon: const Icon(Icons.remove, color: Colors.red),
+                                onPressed: () => model.decrementQuantity(item.product),
+                              ),
+                              Text(
+                                '${item.quantity}',
+                                style: const TextStyle(fontSize: 16),
+                              ),
+                              IconButton(
+                                icon: const Icon(Icons.add, color: Colors.green),
+                                onPressed: () => model.incrementQuantity(item.product),
+                              ),
+                            ],
+                          ),
+                        )).toList(),
+                      ),
+                    if (!model.isCartEmpty) ...[
+                      const Divider(),
+                      Text(
+                        'Subtotal: \$${model.subtotal.toStringAsFixed(2)}',
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                      Text(
+                        'Tax: \$${model.tax.toStringAsFixed(2)}',
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                      Text(
+                        'Total: \$${model.total.toStringAsFixed(2)}',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text('Close'),
+                ),
+                if (!model.isCartEmpty)
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                    ),
+                    onPressed: model.isSubmitting
+                        ? null
+                        : () async {
+                            try {
+                              await model.submitOrder(context);
+                              await ReceiptWidget.showReceiptDialog(
+                                context: context,
+                                orderReference: model.lastOrderId ?? 'N/A',
+                                orderItems: model.cartItems.map((item) => {
+                                  'name': item.product.name,
+                                  'quantity': item.quantity,
+                                  'price': item.product.price,
+                                }).toList(),
+                                cashierName: model.employeeName ?? 'Unknown',
+                                subtotal: model.subtotal,
+                                tax: model.tax,
+                                total: model.total,
+                              );
+                              model.clearCart();
+                            } catch (e) {
+                              if (!context.mounted) return;
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(model.error ?? 'Failed to submit order'),
+                                  backgroundColor: Colors.red,
+                                ),
+                              );
+                            }
+                          },
+                    child: model.isSubmitting
+                        ? const SizedBox(
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                            ),
+                          )
+                        : const Text('Checkout'),
+                  ),
+              ],
+            ),
+          ],
+        ),
       ),
-    );
-  }
-}
+    ),
+  );
+}}
