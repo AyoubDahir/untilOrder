@@ -121,10 +121,65 @@ class MenuPageModel extends ChangeNotifier {
   }
 
   void selectCategory(String? category) {
+    print('Selected category: $category');
     if (_selectedCategory == category) {
       _selectedCategory = null;
     } else {
       _selectedCategory = category;
+    }
+    notifyListeners();
+  }
+
+  Set<String> getCategories() {
+    return _products.map((product) => product.type).toSet();
+  }
+
+  List<product_model.Product> get filteredProductsList {
+    if (_selectedCategory == null || _selectedCategory!.isEmpty) {
+      return _products;
+    }
+    return _products.where((product) => product.type == _selectedCategory).toList();
+  }
+
+  String _normalizeCategory(String? category) {
+    if (category == null) return '';
+    return category.trim().toLowerCase();
+  }
+
+  void filterProducts(String query) {
+    print('Filtering products with query: $query');
+    final normalizedSelectedCategory = _normalizeCategory(_selectedCategory);
+    print('Normalized selected category: $normalizedSelectedCategory');
+
+    _searchQuery = query.toLowerCase();
+    if (_searchQuery.isEmpty) {
+      // If query is empty, show all products but respect category filter
+      _filteredProducts = normalizedSelectedCategory.isEmpty
+          ? List.from(_products)
+          : _products
+              .where((product) =>
+                  _normalizeCategory(product.type) == normalizedSelectedCategory)
+              .toList();
+    } else {
+      // Filter by search query and category
+      _filteredProducts = _products.where((product) {
+        final normalizedProductType = _normalizeCategory(product.type);
+        final matchesSearch = product.name.toLowerCase().contains(_searchQuery) ||
+            product.description.toLowerCase().contains(_searchQuery) ||
+            normalizedProductType.contains(_searchQuery);
+        
+        return normalizedSelectedCategory.isEmpty
+            ? matchesSearch
+            : matchesSearch &&
+                normalizedProductType == normalizedSelectedCategory;
+      }).toList();
+    }
+    
+    // Sort products by name for consistency
+    _filteredProducts.sort((a, b) => a.name.compareTo(b.name));
+    print('Found ${_filteredProducts.length} products after filtering');
+    if (_filteredProducts.isNotEmpty) {
+      print('First 3 filtered products: ${_filteredProducts.take(3).map((p) => p.name).toList()}');
     }
     notifyListeners();
   }
@@ -143,35 +198,6 @@ class MenuPageModel extends ChangeNotifier {
   void setSelectedCashier(Map<String, dynamic> employee) {
     _employeeId = employee['id'].toString();
     _employeeName = employee['name'];
-    notifyListeners();
-  }
-
-  void filterProducts(String query) {
-    _searchQuery = query.toLowerCase();
-    if (_searchQuery.isEmpty) {
-      // If query is empty, show all products but respect category filter
-      _filteredProducts = _selectedCategory == null
-          ? List.from(_products)
-          : _products
-              .where((product) =>
-                  product.category.toLowerCase() == _selectedCategory!.toLowerCase())
-              .toList();
-    } else {
-      // Filter by search query and category
-      _filteredProducts = _products.where((product) {
-        final matchesSearch = product.name.toLowerCase().contains(_searchQuery) ||
-            product.description.toLowerCase().contains(_searchQuery) ||
-            product.category.toLowerCase().contains(_searchQuery);
-        
-        return _selectedCategory == null
-            ? matchesSearch
-            : matchesSearch &&
-                product.category.toLowerCase() == _selectedCategory!.toLowerCase();
-      }).toList();
-    }
-    
-    // Sort products by name for consistency
-    _filteredProducts.sort((a, b) => a.name.compareTo(b.name));
     notifyListeners();
   }
 

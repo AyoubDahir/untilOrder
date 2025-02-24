@@ -260,12 +260,13 @@ class LoginPageModel with ChangeNotifier {
           'method': 'search_read',
           'args': [
             [
-              ['active', '=', true]
+              ['active', '=', true],
+              ['pin', '!=', null],
+              ['id', '!=', null]
             ]
           ],
           'kwargs': {
             'fields': ['id', 'name', 'pin'],
-            'order': 'name asc',
           },
         },
       };
@@ -303,11 +304,11 @@ class LoginPageModel with ChangeNotifier {
       }
 
       final employees = employeeData['result'] as List;
-      if (employees.isEmpty) {
-        errorMessage = 'No cashiers available';
-        debugPrint(errorMessage);
-        return null;
-      }
+      // if (employees.isEmpty) {
+      //   errorMessage = 'No cashiers available';
+      //   debugPrint(errorMessage);
+      //   return null;
+      // }
 
       // Keep all employee data including PIN
       final filteredEmployees = employees
@@ -328,9 +329,9 @@ class LoginPageModel with ChangeNotifier {
         return null;
       }
 
-      debugPrint('Cashiers fetched successfully: ${filteredEmployees.length}');
+      //debugPrint('Cashiers fetched successfully: ${filteredEmployees.length}');
       for (var cashier in filteredEmployees) {
-        debugPrint('Cashier: ${cashier['name']}');
+       // debugPrint('Cashier: ${cashier['name']}');
       }
 
       return filteredEmployees;

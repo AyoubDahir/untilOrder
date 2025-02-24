@@ -27,6 +27,17 @@ class MenuPageWidget extends StatelessWidget {
                 icon: const Icon(Icons.refresh),
                 onPressed: () => model.fetchProducts(forceRefresh: true),
               ),
+              DropdownButton<String>(
+                value: model.selectedCategory,
+                hint: const Text('Select Category'),
+                onChanged: (value) => model.selectCategory(value),
+                items: model.getCategories().map((category) {
+                  return DropdownMenuItem(
+                    value: category,
+                    child: Text(category),
+                  );
+                }).toList(),
+              ),
               Stack(
                 children: [
                   IconButton(
